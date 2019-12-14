@@ -6,4 +6,5 @@ class ContactMailerPreview < ActionMailer::Preview
     ContactMailer.contact_mail
   end
 
+
 end
