@@ -9,13 +9,7 @@ gem 'rails', '~> 5.2.3'
 #gem 'sqlite3'
 gem 'sqlite3', group: :development
 
-group :production do
-  gem 'pg'
-end
-
-group :development, :test do
-  gem 'sqlite3' #do ~ end内部に追加。他のgemは残してください。
-end
+gem 'pg', group: :production
 
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
