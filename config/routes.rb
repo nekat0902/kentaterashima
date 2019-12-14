@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'contacts/new'
+  get 'contacts/create'
   get 'inquiry/new'
   get 'inquiry/create'
   root 'home#new'
