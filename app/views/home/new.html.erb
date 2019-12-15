@@ -81,7 +81,7 @@
 
       </div>
       <div class="inquire z-index100 container">
-        <%= form_for contacts_new_path do |f| %>
+        <%= form_for @contact do |f| %>
 
           <div class="form-group color-white　">
             <%= f.label :email, '返信先メールアドレス', class:'color-white' %>
@@ -97,6 +97,6 @@
 
         <% end %>
       </div>
-    </div>
+
   </div>
 </div>

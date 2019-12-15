@@ -5,12 +5,12 @@ class ContactsController < ApplicationController
 
   def create
     @contact = Contact.new(contact_params)
-      if @contact.save
-        ContactMailer.contact_mail(@contact).deliver
+      if @contact.save!
+        ContactMailer.contact_mail(@contact).deliver_now
         flash[:success] = 'お問い合わせを受け付けました'
-        redirect_to root_path
+        redirect_to root_path, notice: "done"
       else
-        render :new
+        render :new, notice:"no"
       end
   end
 

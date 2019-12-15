@@ -6,5 +6,9 @@ class ContactMailerPreview < ActionMailer::Preview
     ContactMailer.contact_mail
   end
 
+  def contact
+    contact = Contact.new(email:"shinehuman@gmail.com", message:"t")
 
+    ContactMailer.contact_mail(contact)
+  end
 end
