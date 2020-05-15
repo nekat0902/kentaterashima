@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Kentaterashima</title>
+    <title>KentaTerashima</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-
+    <link rel="shortcut icon" href="me8.jpg">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
@@ -17,7 +17,7 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark posi-fix">
     <a class="navbar-brand" href="#">Kenta's Web Site</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -26,8 +26,9 @@
       <div class="navbar-nav">
         <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
         <a class="nav-item nav-link" href="#profile">Profile</a>
-        <a class="nav-item nav-link" href="#photo">Photo</a>
-        <a class="nav-item nav-link" href="#contact">contact</a>
+        <a class="nav-item nav-link" href="#photo">Gallery</a>
+        <a class="nav-item nav-link" href="https://kenshindan.herokuapp.com">健診断</a>
+        <a class="nav-item nav-link" href="mailto:kentaterashima9@gmail.com?subject=本文">Contact</a>
         <!--<a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>-->
       </div>
     </div>
