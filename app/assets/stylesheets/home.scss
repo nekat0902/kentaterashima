@@ -6,3 +6,79 @@
     display: none;
   }
 }
+@media  screen
+and (min-device-width : 375px)
+and (max-device-width : 812px)
+and (-webkit-device-pixel-ratio : 3)
+and (orientation : portrait) {
+   /* STYLES GO HERE */
+   .posi-fix{
+     padding:30px;
+   }
+   .navbar-brand{
+     font-size:30px;
+   }
+   .navbar-toggler{
+     font-size: 50px;
+   }
+   .nav-item{
+     font-size: 50px!important;
+   }
+   #home{
+     height:1000px!important;
+   }
+   .profile-main{
+     display: block!important;
+   }
+   .profile-introduce{
+
+         width: 100%!important;
+   }
+   .profile-left {
+    padding:40px 40px 0 40px;
+    width: 100%!important;
+    font-size:40px;
+    h2{
+      font-size:30px
+    }
+
+  }
+  .profile-img{
+    width:auto!important;
+  }
+  .profile-right {
+      float:none!important;
+      padding-left: 40px;
+      padding-right: 40px;
+      padding-bottom: 10px;
+      color: white;
+      border-radius: 0 10px 0 0;
+      width: 100%!important;
+      ul{
+        li{
+          font-size: 30px;
+        }
+      }
+    }
+
+  .photo-left,.photo-right{
+    display: block!important;
+  }
+  .photo-me,.photo-me2,.photo-cooking,.drawing{
+    width:100%!important;
+    padding-bottom: 20px
+  }
+  .photo-size{
+    height:350px!important;
+    margin: auto;
+    border-radius: 10px;
+    border: 10px solid rgba(163, 139, 0, 0.85);
+
+  }
+  .photo-size2{
+    height:350px!important;
+    margin: auto;
+    border-radius: 10px;
+    border: 10px solid rgba(163, 139, 0, 0.85);
+  }
+ }
